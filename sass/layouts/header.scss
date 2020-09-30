@@ -1,0 +1,91 @@
+.header {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.918),rgba(0, 0, 0, 0.76)),url(../images/kettlebell-3293475_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-size: 1.6rem;
+
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: 5rem[full-start] 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr [full-end]5rem;
+    position: relative;
+}
+
+.nav {
+    grid-column: full-start / full-end;
+
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        
+        width: 50rem;
+        list-style: none;
+        text-transform: capitalize;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+                &:hover {
+            color: $primary-color;
+        }
+    }
+
+}
+
+.text-box {
+    grid-column: col-start 1  / col-end;
+    height: 20rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -5rem;
+}
+
+.textbox {
+    font-size: 4rem;
+    
+    &__span {
+        display: block;
+        color: $primary-color;
+        transform: translateY(2rem);
+    }
+}
+
+.btn {
+    font-size: 1.6rem;
+    font-weight: 550;
+    color: $secondary-color;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #fff;
+    padding: .5rem 3rem;
+    border-radius: 2rem;
+    
+    display: inline-block;   
+    margin-top: 1rem;
+
+    &:hover {
+        background-color: $secondary-color;
+        color: #fff;
+    }
+}
+
+.social-media {
+    grid-column: full-start / full-end;
+    height: 10rem;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 5rem;
+}

@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  line-height: 1.6;
+  background-color: #0b0c10;
+  color: #fff; }
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 5rem 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr 5rem [full-end]; }
+
+.header {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.918), rgba(0, 0, 0, 0.76)), url(../images/kettlebell-3293475_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-size: 1.6rem;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: 5rem [full-start] 1fr repeat(8, [col-start] minmax(min-content, 14rem)) [col-end] 1fr [full-end] 5rem;
+  position: relative; }
+
+.nav {
+  grid-column: full-start / full-end;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  color: #fff; }
+  .nav__item {
+    display: flex;
+    justify-content: space-between;
+    width: 50rem;
+    list-style: none;
+    text-transform: capitalize; }
+  .nav__link {
+    text-decoration: none;
+    color: #fff; }
+    .nav__link:hover {
+      color: #66fcf1; }
+
+.text-box {
+  grid-column: col-start 1  / col-end;
+  height: 20rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -5rem; }
+
+.textbox {
+  font-size: 4rem; }
+  .textbox__span {
+    display: block;
+    color: #66fcf1;
+    transform: translateY(2rem); }
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 550;
+  color: #45a29e;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #fff;
+  padding: .5rem 3rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-top: 1rem; }
+  .btn:hover {
+    background-color: #45a29e;
+    color: #fff; }
+
+.social-media {
+  grid-column: full-start / full-end;
+  height: 10rem;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 5rem; }
+
+.plan {
+  background-color: grey;
+  grid-column: full-start / full-end; }
+
+.contacts {
+  background-color: blue;
+  grid-column: full-start / full-end; }
+
+.stories {
+  background-color: crimson;
+  grid-column: full-start / full-end; }
+
+.footer {
+  background-color: yellow;
+  grid-column: full-start / full-end; }

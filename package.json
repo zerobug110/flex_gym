@@ -1,0 +1,26 @@
+{
+  "name": "flex_gym",
+  "version": "1.0.0",
+  "description": "personal gym website",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerobug110/flex_gym.git"
+  },
+  "keywords": [
+    "gym"
+  ],
+  "author": "Muhammed Bojang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zerobug110/flex_gym/issues"
+  },
+  "homepage": "https://github.com/zerobug110/flex_gym#readme"
+}
