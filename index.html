@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="images/flex-gym.png" type="image/x-icon">
+    <title>Flex Gym</title>
 </head>
 <body class="container">
     <!-- header starts -->
-    <header class="header">
+    <header class="header margin-bottom">
         <nav class="nav">
             <div class="nav__logo">
-                <div class="nav__logo-img">
-                    <img src="" alt="images" srcset="">
+                <div class="nav__logo--box">
+                    <a href="index.html">
+                        <img src="images/flex-gym.png" alt="logo" class="nav__logo">
+                    </a>
                 </div>
             </div>
             <ul class="nav__item">
@@ -29,35 +32,39 @@
             <a href="#" class="btn plan-btn">get started</a>
         </div>
         <div class="social-media">
-            <p>f</p>
-            <p>t</p>
-            <p>g</p>
+            <a href="#">
+                <svg class="social-media__icon">
+                    <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="social-media__icon">
+                    <use xlink:href="images/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="social-media__icon">
+                    <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                </svg>
+            </a>
         </div>
     </header>
 
     <!--header-ends  story section begins-->
 
-    <section class="about">
+    <section class="about margin-bottom">
         <div class="about__text">
-            <h2 class="section__heading">our story</h2>
+            <h2 class="section-heading">our story</h2>
             <p class="about__info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum exercitationem dolor sapiente soluta temporibus nam quaerat non mollitia perspiciatis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat placeat molestiae ratione, et laboriosam hic voluptate consectetur non, totam magni nihil nam cum explicabo ut quibusdam. Debitis, expedita quibusdam ab a sit similique sed! Harum, veniam exercitationem. Suscipit vitae fuga dolor obcaecati harum, ipsam minima quidem mollitia ut deleniti optio.
             </p>
         </div>
-        <div class="about__images">
-            <div class="about__img">
-                <img src="" alt="about images" class="about__img--1">
-            </div>
-            <div class="about__img">
-                <img src="" alt="about images" class="about__img--2">
-            </div>
-            <div class="about__img">
-                <img src="" alt="about images" class="about__img--3">
-            </div>
+        <div class="about__image">
+            <img src="images/training.jpg" alt="about images" class="about__img">
         </div>
     </section>
     <!--story section ends service section begins-->
-    <section class="service">
+    <section class="service margin-bottom">
         <h2 class="section-heading">services</h2>
         <div class="service__container">
             <div class="service__content">
