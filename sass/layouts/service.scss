@@ -1,5 +1,9 @@
 .service {
     grid-column: col-start 1 / col-end;
     text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 25rem));
+
     
 }
