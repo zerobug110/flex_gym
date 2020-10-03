@@ -2,8 +2,36 @@
     grid-column: col-start 1 / col-end;
     text-align: center;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 25rem));
+    &__container {
+        font-size: 1.6rem;
+        color: $light-grey;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-gap: 2rem;
+        
+    }
 
+    &__content {
+        background-color: $light-blue;
+        padding: 2rem 1rem;
+        border-radius: .2rem;
+
+        &--heading {
+            color: $secondary-color;
+            text-transform: capitalize;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        &--no {
+            color: $primary-color;
+            border: .1rem solid $secondary-color;
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            
+        }
+    }
     
 }
