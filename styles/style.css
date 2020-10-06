@@ -143,7 +143,7 @@ body {
     grid-gap: 2rem; }
   .service__content {
     background-color: #1f2833;
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: .2rem;
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3); }
     .service__content--heading {
@@ -219,6 +219,63 @@ details[open] summary ~ * {
   .not-late__info {
     font-size: 1.7rem;
     color: #c5c6c7; }
+
+.subscription {
+  grid-column: col-start 1 / col-end;
+  text-align: center; }
+  .subscription__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 5rem;
+    text-align: center; }
+  .subscription__info {
+    font-size: 1.6rem;
+    color: #c5c6c7;
+    max-width: 60rem;
+    margin: 0 auto; }
+  .subscription__content {
+    background-color: #1f2833;
+    font-size: 1.6rem;
+    padding: 3rem 1rem;
+    margin-top: 5rem;
+    border-radius: .2rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.7);
+    transition: all .5s ease-in-out; }
+    .subscription__content:hover {
+      transform: scale(1.1);
+      background-color: #344355; }
+  .subscription__name {
+    color: #66fcf1;
+    text-transform: uppercase; }
+  .subscription__price {
+    font-family: sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #45a29e; }
+  .subscription__sup {
+    font-size: 3rem;
+    margin: 4rem .1rem;
+    font-weight: 200;
+    color: #45a29e; }
+  .subscription__items {
+    list-style: none;
+    color: #45a29e;
+    text-transform: capitalize;
+    margin-bottom: 3rem; }
+  .subscription__list-item {
+    color: #c5c6c7;
+    margin-bottom: .2rem; }
+  .subscription__btn-get-started {
+    font-size: 1.6rem;
+    color: #0b0c10;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #45a29e;
+    padding: 1rem 1.5rem;
+    border-radius: .2rem;
+    transition: all .2s; }
+    .subscription__btn-get-started:hover {
+      background-color: #66fcf1; }
 
 .plan {
   background-color: grey;

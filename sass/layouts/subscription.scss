@@ -1,0 +1,86 @@
+.subscription {
+    grid-column: col-start 1 / col-end;
+    text-align: center;
+    
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 5rem;
+        text-align: center;
+    }
+
+    &__info {
+        font-size: 1.6rem;
+        color: $light-grey;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    &__content {
+        background-color: $light-blue ;
+        font-size: 1.6rem;
+        padding: 3rem 1rem;
+        margin-top: 5rem;
+        border-radius: .2rem;
+        box-shadow: 0 .2rem .5rem rgba(0,0,0, .7);
+        transition: all .5s ease-in-out;
+
+        &:hover {
+           transform: scale(1.1); 
+           background-color: $lighter-blue;
+        }
+    }
+
+    &__name {
+        color: $primary-color;
+        text-transform: uppercase;
+
+    }
+
+    &__price {
+        font-family: sans-serif;
+        font-size: 5rem;
+        font-weight: 300;
+        color: $secondary-color;
+    }
+    
+    &__sup {
+        font-size: 3rem;
+        margin: 4rem .1rem;
+        font-weight: 200;
+        color: $secondary-color;
+    }
+
+    &__items {
+        list-style: none;
+        color: $secondary-color;
+        text-transform: capitalize;
+        margin-bottom: 3rem;
+        
+    }
+
+    &__list-item {
+        color: $light-grey;
+        margin-bottom: .2rem;
+
+    }
+
+    &__btn-get-started {
+        font-size: 1.6rem;
+        color: $dark-blue;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: $secondary-color;
+        padding: 1rem 1.5rem;
+        border-radius: .2rem;
+        transition: all .2s;
+       // box-shadow: 0 .2rem .5rem rgba(0,0,0, .2);
+
+        &:hover {
+            background-color: $primary-color;
+        }
+        
+        
+    }
+
+}
