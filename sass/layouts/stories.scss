@@ -15,19 +15,23 @@
     border-radius: .2rem;
     text-align: center;
     transform: translateY(-5rem);
-
+    
     &__info {
         padding: 5rem;
+        position: relative;
+        overflow: hidden;
     }
 
     &__heading {
         color: $primary-color;
-        margin-top: 2rem;
+        margin: 1rem 0;
         text-transform: uppercase;
+        font-weight: 200;
     }
 
     &__text {
         color: $light-grey;
+        
     }
 
     &__name {
@@ -56,17 +60,44 @@
 
 }
 
-.slider-icons {
-    cursor: pointer;
+.slide-icons {
     fill: $secondary-color;
+    //margin-top: 1rem;
+    width: 7rem;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(2rem);
+   
 }
 
 .btn-next {
     width: 2.5rem;
     height: 2.5rem;   
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        fill: $primary-color;
+    }
 }
 
 .btn-prev {
     width: 2.5rem;
     height: 2.5rem;   
+    cursor: pointer;
+
+    &:hover {
+        fill: $primary-color;
+    }
+}
+
+.quote-icon {
+    position: absolute;
+    top: -5rem;
+    left: -7rem;
+    z-index: -5;
+    opacity: .08;
 }
