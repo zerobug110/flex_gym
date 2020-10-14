@@ -356,6 +356,8 @@ details[open] summary ~ * {
   border-radius: 50%;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.7);
   cursor: pointer; }
+  .send-icon:hover {
+    fill: #66fcf1; }
 
 .stories {
   grid-column: col-start 1 / col-end;
