@@ -475,6 +475,7 @@ details[open] summary ~ * {
   grid-column: col-start 1 / col-end;
   font-size: 1.6rem;
   text-transform: capitalize;
-  color: #0b0c10;
+  color: #c5c6c7;
+  opacity: .5;
   text-align: center;
   margin-top: 2rem; }
