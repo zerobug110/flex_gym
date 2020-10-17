@@ -51,17 +51,18 @@ body {
     height: 100%; }
     .nav__logo--box {
       width: 5rem;
-      height: 4rem; }
+      height: 3rem; }
   .nav__item {
     display: flex;
     justify-content: space-between;
-    width: 60rem;
+    width: 70rem;
     list-style: none;
     text-transform: capitalize;
     margin-top: .5rem; }
   .nav__link {
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    font-weight: 650; }
     .nav__link:hover {
       color: #66fcf1; }
 
@@ -150,7 +151,7 @@ body {
       color: #45a29e;
       text-transform: uppercase;
       font-size: 2rem;
-      font-weight: 400; }
+      font-weight: 650; }
     .service__content--no {
       color: #66fcf1;
       border: 0.1rem solid #45a29e;
@@ -381,14 +382,14 @@ details[open] summary ~ * {
     color: #66fcf1;
     margin: 1rem 0;
     text-transform: uppercase;
-    font-weight: 200; }
+    font-weight: 550; }
   .review__text {
     color: #c5c6c7; }
   .review__name {
+    font-size: 1.6rem;
     color: #45a29e;
     text-transform: capitalize;
-    margin-top: 2rem;
-    font-style: italic; }
+    margin-top: 2rem; }
   .review__img-box {
     height: 10rem;
     width: 10rem;

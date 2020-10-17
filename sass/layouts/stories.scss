@@ -26,7 +26,7 @@
         color: $primary-color;
         margin: 1rem 0;
         text-transform: uppercase;
-        font-weight: 200;
+        font-weight: 550;
     }
 
     &__text {
@@ -35,10 +35,11 @@
     }
 
     &__name {
+        font-size: 1.6rem;
         color: $secondary-color;
         text-transform: capitalize;
         margin-top: 2rem;
-        font-style: italic;
+        
 
     }
 
