@@ -22,7 +22,7 @@ const btnPrev = document.querySelector('.btn-prev');
 const reviews = [
     {
         id: 1,
-        img: '../images/review-1.jpg',
+        img: '../images/review-3.jpg',
         heading: 'wow i lost 20 pounds in 1 month',
         desc: '  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illum reprehenderit earum, laborum voluptates perferendis, incidunt eum modi aperiam magnam vero impedit quibusdam, architecto quasi exercitationem repellendus magni ',
         name: 'muhammed touray'
@@ -39,7 +39,7 @@ const reviews = [
 
     {
         id: 1,
-        img: '../images/review-3.jpg',
+        img: '../images/review-1.jpg',
         heading: 'finally i can train at night',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla vel, saepe eaque ex vero nam quasi aperiam non autem! Eius eligendi tempore deleniti necessitatibus dolorum porro vitae ratione autem voluptas nesciunt nemo adipisci,',
         name: 'anna kane'
