@@ -1,14 +1,15 @@
-// nav variables
-const hamburger = document.querySelector('.line');
-const show = document.querySelector('.show');
-const navList = document.querySelector('.navList');
+                          //nav slider
+//select variable
+const navList = document.querySelector('.nav__list');
+const navToggle = document.querySelector('.lines');
 
+navToggle.addEventListener('click', ()=> {
+    navList.classList.toggle('show');    
+});
 
-// hamburger menu 
-// show.addEventListener('click', ()=>{
-//     navList.classList.toggle('show');
-// });
+//generate the current date
 
+const currentDate = document.getElementById('current-date');
 // review variables
 const reviewImg = document.querySelector('.review__img');
 const reviewHeading = document.querySelector('.review__heading');

@@ -41,6 +41,21 @@
         list-style: none;
         text-transform: capitalize;
         margin-top: .5rem;
+
+        @include respond (tab-port) {
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-evenly;
+           
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;   
+            margin-top: -100vh;  
+            transition: all .4s ;
+            z-index: 10;
+        }
+
     }
 
     &__link {
@@ -52,6 +67,15 @@
         }
     }
 
+
+}
+
+.show {
+    height: 40rem;
+    background-color: $secondary-color;
+    margin-top: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    
 }
 
 .text-box {
@@ -118,5 +142,27 @@
         }
 
 
+    }
+}
+
+.lines {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    display: none;
+
+    @include respond (tab-port) {
+        display: block;
+    }
+
+    & > * {
+        background-color: #fff;
+        width: 3rem;
+        height: .5rem;
+        margin-bottom: .6rem;
     }
 }
